@@ -15,9 +15,9 @@ export default function Home() {
             <div className="w-1/2 md:w-full">
               <Image
                 src={DevImage}
+                priority
                 alt="Tanzir Ibne Ali"
                 className="w-full h-auto lg:hidden md:inline-block md:w-full"
-                loading="lazy"
               />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
@@ -53,7 +53,7 @@ export default function Home() {
             </div>
           </div>
           <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
-            <Image src={lightBulb} alt="lightBulb" className="w-full h-auto" />
+            <Image src={lightBulb} alt="lightBulb" priority className="w-full h-auto" />
           </div>
         </Layout>
       </main>

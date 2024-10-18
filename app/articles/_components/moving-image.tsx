@@ -50,6 +50,7 @@ const MovingImage: React.FC<MovingImageProps> = ({ title, img, link }) => {
         src={img}
         alt={title}
         className="z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden"
+        priority
       />
     </Link>
   );

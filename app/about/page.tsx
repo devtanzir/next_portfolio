@@ -47,7 +47,7 @@ const About = () => {
                 src={profile}
                 alt="TanzirIbneAli"
                 className="w-full h-auto rounded-2xl"
-                loading="lazy"
+                priority
               />
             </div>
 
