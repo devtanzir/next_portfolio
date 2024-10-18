@@ -2,12 +2,11 @@ import { useRef } from "react";
 import LiIcon from "./li-icon";
 import { motion } from "framer-motion";
 
-interface DetailsProps{
-    type: string;
-    time: string;
-    place: string;
-    info: string;
-  
+interface DetailsProps {
+  type: string;
+  time: string;
+  place: string;
+  info: string;
 }
 
 const Details: React.FC<DetailsProps> = ({ type, time, place, info }) => {
@@ -23,15 +22,18 @@ const Details: React.FC<DetailsProps> = ({ type, time, place, info }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{type}</h3>
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg text-dark dark:text-light">
+          {type}
+        </h3>
 
-
-        <span className="capitalize font-medium text-dark/75  xs:text-sm">
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75  xs:text-sm">
           {time} | {place}
         </span>
-        <p className="font-medium w-full md:text-sm">{info}</p>
+        <p className="font-medium w-full md:text-sm text-dark dark:text-light">
+          {info}
+        </p>
       </motion.div>
     </li>
   );
 };
-export default Details
+export default Details;

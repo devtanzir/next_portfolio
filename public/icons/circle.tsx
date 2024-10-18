@@ -3,7 +3,7 @@ const CircleText = (props:any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={496}
-    height={1496}
+    height={496}
     viewBox="0 0 496 496"
     {...props}
   >

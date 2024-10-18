@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {Montserrat} from "next/font/google"
+import { Montserrat } from "next/font/google";
 import Navbar from "./_components/Navbar/navbar";
 import Footer from "./_components/Footer/footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["100","200","300","400","500","600","700","800","900"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 export const metadata: Metadata = {
   title: "Tanzir Ibne Ali",
@@ -21,11 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} antialiased bg-light  w-full min-h-screen`}
+        className={`${montserrat.className} antialiased bg-light dark:bg-dark  w-full min-h-screen`}
       >
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
