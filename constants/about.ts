@@ -4,26 +4,26 @@ export const skills = [
   {
     id: createId(),
     name: "ReactJs",
-    x: "-23vw",
-    y: "2vw",
+    x: "-37vw",
+    y: "-6vw",
   },
   {
     id: createId(),
     name: "NextJs",
-    x: "-5vw",
+    x: "-10vw",
     y: "-10vw",
   },
   {
     id: createId(),
     name: "JavaScript",
-    x: "20vw",
-    y: "6vw",
+    x: "31vw",
+    y: "11vw",
   },
   {
     id: createId(),
     name: "TypeScript",
-    x: "0vw",
-    y: "12vw",
+    x: "10vw",
+    y: "15vw",
   },
   {
     id: createId(),
@@ -34,7 +34,7 @@ export const skills = [
   {
     id: createId(),
     name: "Tailwind CSS",
-    x: "15vw",
+    x: "32vw",
     y: "-12vw",
   },
   {
@@ -46,20 +46,20 @@ export const skills = [
   {
     id: createId(),
     name: "Material UI",
-    x: "25vw",
-    y: "-7vw",
+    x: "39vw",
+    y: "3vw",
   },
   {
     id: createId(),
     name: "Framer Motion",
-    x: "-25vw",
-    y: "-10vw",
+    x: "-19vw",
+    y: "-4vw",
   },
   {
     id: createId(),
     name: "SASS",
-    x: "-15vw",
-    y: "0vw",
+    x: "-24vw",
+    y: "5vw",
   },
   {
     id: createId(),
@@ -70,14 +70,14 @@ export const skills = [
   {
     id: createId(),
     name: "Strapi",
-    x: "7vw",
+    x: "11vw",
     y: "-7vw",
   },
   {
     id: createId(),
     name: "Firebase",
-    x: "15vw",
-    y: "-12vw",
+    x: "18vw",
+    y: "-17vw",
   },
   {
     id: createId(),
@@ -94,7 +94,7 @@ export const skills = [
   {
     id: createId(),
     name: "Github",
-    x: "-25vw",
+    x: "-38vw",
     y: "8vw",
   },
 ];

@@ -47,8 +47,8 @@ const Project: React.FC<ProjectProps> = ({
             {title}
           </h2>
         </Link>
-        <div className="w-full mt-2 flex items-center justify-between">
-          <div className="flex gap-5 items-center">
+        <div className="w-full mt-2 flex items-center md:flex-col justify-between">
+          <div className="flex gap-5 items-center md:justify-between md:mb-4 md:w-full">
             <Link
               href={link}
               target="_blank"
@@ -59,14 +59,14 @@ const Project: React.FC<ProjectProps> = ({
             <Link
               href={github}
               target="_blank"
-              className="text-4xl md:w-6 dark:text-light"
+              className="text-4xl dark:text-light"
             >
               <FaGithub />
             </Link>
           </div>
           <Link
             href={"/"}
-            className="flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light md:p-2 md:px-4 md:text-base"
+            className="flex bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light md:p-2 md:px-4 md:text-base md:w-full md:items-center text-center justify-center"
           >
             Case Study
           </Link>

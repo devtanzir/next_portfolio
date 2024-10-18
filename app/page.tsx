@@ -18,6 +18,9 @@ export default function Home() {
                 priority
                 alt="Tanzir Ibne Ali"
                 className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                50vw"
               />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
