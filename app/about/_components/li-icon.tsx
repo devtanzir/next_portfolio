@@ -3,14 +3,17 @@ import { motion, useScroll } from "framer-motion";
 
 interface LiProps {
   reference: React.RefObject<HTMLDivElement>;
+  className?: string;
 }
-const LiIcon: React.FC<LiProps> = ({ reference }) => {
+const LiIcon: React.FC<LiProps> = ({ reference, className }) => {
   const { scrollYProgress } = useScroll({
     target: reference,
     offset: ["center end", "center center"],
   });
   return (
-    <figure className="absolute left-0 stroke-dark dark:stroke-light">
+    <figure
+      className={`absolute left-0 stroke-dark dark:stroke-light ${className}`}
+    >
       <svg
         className="-rotate-90 md:w-[60px] md:h-[60px] xs:w-[40px] xs:h-[40px]"
         width="75"

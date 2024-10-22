@@ -17,10 +17,10 @@ const Projects = () => {
             {ProjectsData.map((project) => (
               <div key={project.id} className="col-span-6 sm:col-span-12">
                 <Project
+                  id={project.slug}
                   title={project.title}
-                  img={project.image}
-                  link={project.link}
-                  github={project.github}
+                  img={project.thumbnail}
+                  link={project.preview}
                   type={project.type}
                 />
               </div>

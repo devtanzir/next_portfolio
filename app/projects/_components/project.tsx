@@ -1,21 +1,14 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaGithub } from "react-icons/fa6";
 interface ProjectProps {
+  id: string;
   title: string;
   type: string;
   img: StaticImageData;
   link: string;
-  github: string;
 }
-const Project: React.FC<ProjectProps> = ({
-  title,
-  type,
-  img,
-  link,
-  github,
-}) => {
+const Project: React.FC<ProjectProps> = ({ id, title, type, img, link }) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark dark:border-light bg-light dark:bg-dark p-6 relative xs:p-4">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
@@ -54,18 +47,11 @@ const Project: React.FC<ProjectProps> = ({
               target="_blank"
               className="ml-4 text-lg font-semibold underline md:text-base text-dark dark:text-light"
             >
-              Visit
-            </Link>
-            <Link
-              href={github}
-              target="_blank"
-              className="text-4xl dark:text-light"
-            >
-              <FaGithub />
+              Preview
             </Link>
           </div>
           <Link
-            href={"/"}
+            href={`projects/${id}`}
             className="flex bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light md:p-2 md:px-4 md:text-base md:w-full md:items-center text-center justify-center"
           >
             Case Study
