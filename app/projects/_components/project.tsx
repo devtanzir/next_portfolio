@@ -20,7 +20,7 @@ const Project: React.FC<ProjectProps> = ({ id, title, type, img, link }) => {
         <Image
           src={img}
           alt={title}
-          className="w-full h-auto hover:scale-105 duration-300"
+          className="w-full hover:scale-105 duration-300 object-cover"
           priority
           sizes="(max-width: 768px) 100vw,
                   (max-width: 1200px) 50vw,

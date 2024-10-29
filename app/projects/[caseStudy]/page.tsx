@@ -12,8 +12,6 @@ interface ShopBDCaseStudyProps {
 }
 
 const ShopBDCaseStudy: React.FC<ShopBDCaseStudyProps> = ({ params }) => {
-  console.log(params.caseStudy, "this is param");
-
   const data = ProjectsData.find((item) => item.slug === params.caseStudy);
   if (!data) return;
   return (
