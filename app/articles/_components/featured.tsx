@@ -45,7 +45,8 @@ const FeaturedArticle: React.FC<FeaturedProps> = ({
           {title}
         </h2>
       </Link>
-      <p className="text-sm mb-2 text-dark dark:text-light">{summary}</p>
+      <p className="text-sm mb-2 text-dark dark:text-light line-clamp-2" title={summary
+      }>{summary}</p>
       <span className="text-primary dark:text-primaryDark font-semibold">
         {time}
       </span>

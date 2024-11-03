@@ -23,6 +23,11 @@ export const navLinks = [
     name: "Articles",
     to: "/articles",
   },
+  {
+    id: createId(),
+    name: "Pricing",
+    to: "/pricing",
+  },
 ];
 
 export const socialLinks = [
