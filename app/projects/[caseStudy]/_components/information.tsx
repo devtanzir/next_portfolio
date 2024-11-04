@@ -4,14 +4,40 @@ import { motion, useScroll } from "framer-motion";
 import Boxes from "./boxes";
 import { Des, Title, Wrapper } from "@/components/ui/case-study";
 import ListItem, { ListDiv } from "./list-item";
+import { StaticImageData } from "next/image";
 
 interface InformationProps {
-  project: any;
+  project: ProjectsProps;
 }
 export interface ProjectInfo {
   id: string;
   title: string;
   content?: string;
+}
+interface CaseStudy {
+  id: string;
+  name: string;
+  content?: string;
+  type: string;
+  sections?: ProjectInfo[];
+  lists?: ProjectInfo[];
+  description?: string;
+}
+interface LinksProps {
+  id: string;
+  url: string;
+  title: string,
+}
+interface ProjectsProps {
+  id: string;
+  title: string;
+  slug: string;
+  preview: string;
+  type: string;
+  thumbnail?: StaticImageData;
+  links: LinksProps[];
+  duration: string;
+  caseStudy: CaseStudy[];
 }
 const ScrollComponent: React.FC<InformationProps> = ({ project }) => {
   const ref = useRef(null);
@@ -27,16 +53,20 @@ const ScrollComponent: React.FC<InformationProps> = ({ project }) => {
           md:w-[2px] sm:left-[20px]"
         />
         <div className="flex flex-col items-center p-5 relative sm:gap-10">
-          {project?.caseStudy?.map((caseStudy: any, index: number) => (
-            <Boxes right={index % 2 !== 0}>
+          {project?.caseStudy?.map((caseStudy: CaseStudy, index: number) => (
+            <Boxes key={caseStudy.id} right={index % 2 !== 0}>
               <Wrapper>
                 <Title>{caseStudy?.name}</Title>
                 {caseStudy.content && <Des>{caseStudy.content}</Des>}
                 {caseStudy.type === "section" && (
-                  <ListDiv data={caseStudy.sections} />
+                  caseStudy.sections && (
+                    <ListDiv data={caseStudy.sections} />
+                  )
                 )}
                 {caseStudy.type === "list" && (
-                  <ListItem data={caseStudy.lists} />
+                  caseStudy.lists && (
+                    <ListItem data={caseStudy.lists} />
+                  )
                 )}
                 {caseStudy.description && <Des>{caseStudy.description}</Des>}
               </Wrapper>
