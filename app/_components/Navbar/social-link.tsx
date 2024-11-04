@@ -9,7 +9,7 @@ interface SocialProps {
 }
 const SocialLink: React.FC<SocialProps> = ({ mobile }) => {
   return (
-    <nav className="flex gap-5 items-center">
+    <nav className={`flex gap-5 items-center ${mobile ? "mt-2" : ""}`}>
       {socialLinks.map((item) => (
         <motion.a
           key={item.id}
