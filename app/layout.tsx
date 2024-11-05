@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   title: "Tanzir Ibne Ali",
   description: "proficient frontend developer",
   authors: [{name: "Tanzir Ibne Ali"}],
-  keywords: ["portfolio", "tanziribneali", "tanzir", "Tanzir Ibne Ali", "next.js portfolio", "typeScript portfolio"]
+  keywords: ["portfolio", "tanziribneali", "tanzir", "Tanzir Ibne Ali", "next.js portfolio", "typeScript portfolio"],
+  robots: "index, follow"
 };
 
 export default function RootLayout({

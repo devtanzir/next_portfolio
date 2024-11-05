@@ -1,8 +1,8 @@
 import { createId } from "@/lib/utils";
-import ShopBD from "@/public/image/shop-bd.png";
-import StudyTube from "@/public/image/clean-youtube.png";
-import TimeZone from "@/public/image/timezone.png"
-import FoodApp from "@/public/image/food-app.png"
+import ShopBD from "@/public/image/shop-bd.webp";
+import StudyTube from "@/public/image/clean-youtube.webp";
+import TimeZone from "@/public/image/timezone.webp"
+import FoodApp from "@/public/image/food-app.webp"
 
 export const ProjectsData = [
   {

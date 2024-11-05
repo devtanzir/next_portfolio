@@ -12,6 +12,7 @@ const SocialLink: React.FC<SocialProps> = ({ mobile }) => {
     <nav className={`flex gap-5 items-center ${mobile ? "mt-2" : ""}`}>
       {socialLinks.map((item) => (
         <motion.a
+          title="Social Icon"
           key={item.id}
           href={item.url}
           target="_blank"

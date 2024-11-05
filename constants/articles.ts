@@ -1,9 +1,9 @@
 import { createId } from "@/lib/utils";
 import featureImage1 from "@/public/image/feature-blog.avif";
 import featureImage2 from "@/public/image/feature-blog2.avif";
-import allBlogImage from "@/public/image/react-19.jpg";
-import allBlogImage2 from "@/public/image/user-interface.png";
-import allBlogImage3 from "@/public/image/five-important.png";
+import allBlogImage from "@/public/image/react-19.webp";
+import allBlogImage2 from "@/public/image/user-interface.webp";
+import allBlogImage3 from "@/public/image/five-important.webp";
 
 export const featureBlog = [
   {

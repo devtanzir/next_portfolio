@@ -8,6 +8,7 @@ const ThemeButton = () => {
   return (
     <>
       <button
+        title={mode === "light" ? "Dark": "Light" }
         onClick={() => setMode(mode === "light" ? "dark" : "light")}
         className={`ml-3 flex items-center justify-center rounded-full p-1
         ${
