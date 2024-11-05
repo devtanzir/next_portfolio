@@ -3,6 +3,11 @@ import Layout from "@/components/shared/layout";
 import React from "react";
 import Project from "./_components/project";
 import { ProjectsData } from "@/constants/projects";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Projects | Tanzir Ibne Ali',
+}
 
 const Projects = () => {
   return (

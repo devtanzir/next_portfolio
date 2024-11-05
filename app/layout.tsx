@@ -11,6 +11,8 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Tanzir Ibne Ali",
   description: "proficient frontend developer",
+  authors: [{name: "Tanzir Ibne Ali"}],
+  keywords: ["portfolio", "tanziribneali", "tanzir", "Tanzir Ibne Ali", "next.js portfolio", "typeScript portfolio"]
 };
 
 export default function RootLayout({

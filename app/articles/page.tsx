@@ -3,6 +3,11 @@ import AnimatedText from "@/components/shared/animate-text";
 import Article from "./_components/article";
 import FeaturedArticle from "./_components/featured";
 import { allBlog, featureBlog } from "@/constants/articles";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Articles | Tanzir Ibne Ali',
+}
 
 const Articles = () => {
   return (

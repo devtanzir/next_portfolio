@@ -11,6 +11,14 @@ interface ShopBDCaseStudyProps {
   };
 }
 
+export async function generateMetadata({ params }: ShopBDCaseStudyProps) {
+  const data = ProjectsData.find((item) => item.slug === params.caseStudy);
+
+  return {
+    title: `${data?.title} | Tanzir Ibne Ali`,
+  }
+}
+
 const ShopBDCaseStudy: React.FC<ShopBDCaseStudyProps> = ({ params }) => {
   const data = ProjectsData.find((item) => item.slug === params.caseStudy);
   if (!data) return;

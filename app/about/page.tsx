@@ -6,6 +6,11 @@ import Image from "next/image";
 import AnimatedNumbers from "./_components/animated-number";
 import Skills from "./_components/skills";
 import Education from "./_components/education";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'About | Tanzir Ibne Ali',
+}
 
 const About = () => {
   return (

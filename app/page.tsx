@@ -1,5 +1,5 @@
 import Layout from "@/components/shared/layout";
-import DevImage from "@/public/image/developer-pic-1.png";
+import DevImage from "@/public/image/developer-pic-2.webp";
 import Image from "next/image";
 import AnimatedText from "@/components/shared/animate-text";
 import Link from "next/link";
