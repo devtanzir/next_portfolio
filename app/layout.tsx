@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tanzir Ibne Ali",
     description: "Proficient frontend developer",
-    images: ["https://tanziribneali.vercel.app/website-banner.png"],
+    images: ["https://tanziribneali.vercel.app/image/website-banner.png"],
     creator: "@TanzirIbneAli",
   },
   alternates: {
