@@ -122,3 +122,19 @@ export const education = [
     info: "Now I'M entered the world of Programming. I Strongly believe That It Will my future. Completed Frontend Development Course and Looking For a Job. ",
   },
 ];
+export const experience = [
+  {
+    id: createId(),
+    type: "Frontend Developer Intern",
+    time: "Jan 2025 - Mar 2025",
+    place: "DevZone",
+    info: "During my internship at DevZon, I worked on building and enhancing responsive web applications using React.js, Next.js, and Tailwind CSS. I collaborated with senior developers to translate UI/UX designs into functional features, integrate REST APIs, and optimize application performance. This experience strengthened my problem-solving skills, code quality practices, and teamwork in a professional development environment.",
+  },
+  {
+    id: createId(),
+    type: "Frontend Developer",
+    time: "Apr 2025 – Present",
+    place: "Scaleup Ads Agency",
+    info: "At Scaleup Ads, I work as a Frontend Developer, building and maintaining client-facing web applications using React.js, Next.js, and Tailwind CSS. My role involves collaborating closely with designers and product managers to deliver responsive, high-performance user interfaces. I integrate REST APIs, optimize application speed, and ensure clean, maintainable code through best practices and version control. This position has strengthened my ability to work in agile teams and deliver real-world solutions for diverse clients.",
+  },
+ ];

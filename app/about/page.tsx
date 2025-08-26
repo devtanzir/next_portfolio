@@ -1,12 +1,13 @@
 import AnimatedText from "@/components/shared/animate-text";
 import Layout from "@/components/shared/layout";
 import React from "react";
-import profile from "@/public/image/tanzir.webp";
+import profile from "@/public/image/tanzir.png";
 import Image from "next/image";
 import AnimatedNumbers from "./_components/animated-number";
 import Skills from "./_components/skills";
 import Education from "./_components/education";
 import type { Metadata } from 'next'
+import Experience from "./_components/experience";
  
 export const metadata: Metadata = {
   title: 'About | Tanzir Ibne Ali',
@@ -89,6 +90,7 @@ const About = () => {
             </div>
           </div>
           <Skills />
+          <Experience/>
           <Education />
         </Layout>
       </main>
