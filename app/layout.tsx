@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     siteName: "Tanzir Ibne Ali Portfolio",
     images: [
       {
-        url: "/website-banner.png",
+        url: "https://tanziribneali.vercel.app/website-banner.png",
         width: 1200,
         height: 630,
         alt: "Tanzir Ibne Ali Portfolio",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tanzir Ibne Ali",
     description: "Proficient frontend developer",
-    images: ["/website-banner.png"],
+    images: ["https://tanziribneali.vercel.app/website-banner.png"],
     creator: "@TanzirIbneAli",
   },
   alternates: {
