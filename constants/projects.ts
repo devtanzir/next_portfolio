@@ -2,8 +2,155 @@ import ShopBD from "@/public/image/shop-bd.webp";
 import StudyTube from "@/public/image/clean-youtube.webp";
 import TimeZone from "@/public/image/timezone.webp"
 import FoodApp from "@/public/image/food-app.webp"
+import TaskNest from "@/public/image/task-nest.webp"
 
 export const ProjectsData = [
+    {
+  id: "TNx1234567890", // unique id
+  title: "TaskNest",
+  slug: "tasknest",
+  preview: "https://task-nest-tanzir-ibne-alis-projects.vercel.app/",
+  type: "Project Management",
+  thumbnail: TaskNest,
+  links: [
+    {
+      id: "TN-link-1",
+      title: "live preview",
+      url: "https://task-nest-tanzir-ibne-alis-projects.vercel.app/",
+    },
+    {
+      id: "TN-link-2",
+      title: "frontend",
+      url: "https://github.com/devtanzir/TaskNest--project-management-tool",
+    },
+  ],
+  duration: "4 months",
+  caseStudy: [
+    {
+      id: "TN-case-1",
+      name: "Project Overview",
+      content: `TaskNest is a modern project management tool designed to help individuals and teams easily organize, track, and manage their tasks. The app focuses on simplicity and productivity, allowing users to manage projects efficiently from a single dashboard.`,
+      type: "section",
+      sections: [
+        {
+          id: "TN-section-1",
+          title: "Tech Stack",
+          content: `Next.js 14, React 18, TypeScript, Tailwind CSS, Appwrite (Backend), React Hook Form, TanStack Query & Table, Recharts, Radix UI components, Sonner for notifications.`,
+        },
+        {
+          id: "TN-section-2",
+          title: "Objective",
+          content: `Create a scalable, intuitive project management web application that allows users to create projects, assign tasks, track progress, and visualize data with charts, ensuring high performance and responsive design.`,
+        },
+      ],
+    },
+    {
+      id: "TN-case-2",
+      name: "Problem Statement",
+      content: `Many existing project management tools are either too complex for small teams or lack essential features like task tracking, visual dashboards, and team collaboration. TaskNest aims to address these gaps by providing a balanced, user-friendly solution.`,
+      type: "list",
+      lists: [
+        { id: "TN-prob-1", title: "Simplifying task and project management for individuals and teams." },
+        { id: "TN-prob-2", title: "Providing real-time updates and progress tracking." },
+        { id: "TN-prob-3", title: "Ensuring smooth, responsive, and fast user experience across devices." },
+      ],
+      description: `The app focuses on reducing complexity while maintaining essential productivity features for effective project management.`,
+    },
+    {
+      id: "TN-case-3",
+      name: "Research & Planning",
+      content: `Before building TaskNest, research was conducted on popular project management tools to identify strengths and weaknesses. Key considerations included usability, performance, and collaborative features.`,
+      type: "section",
+      sections: [
+        {
+          id: "TN-res-1",
+          title: "Competitor Analysis",
+          content: `Analyzed tools like Trello, Asana, and Notion for workflow and dashboard design inspiration.`,
+        },
+        {
+          id: "TN-res-2",
+          title: "User Research",
+          content: `Identified common pain points such as overloaded interfaces, difficult navigation, and lack of quick task management features.`,
+        },
+        {
+          id: "TN-res-3",
+          title: "Technology Decisions",
+          content: `Next.js and React for frontend performance, Appwrite for backend simplicity, Tailwind CSS for responsive styling, React Query for state management, and Recharts for data visualization.`,
+        },
+      ],
+    },
+    {
+      id: "TN-case-4",
+      name: "Project Setup",
+      content: `Next.js project setup with TypeScript, Tailwind CSS for styling, and Appwrite for backend services including authentication, database, and storage.`,
+      type: "paragraph",
+    },
+    {
+      id: "TN-case-5",
+      name: "UI/UX Design",
+      content: `Designed with simplicity and usability in mind, focusing on easy navigation, clear dashboards, and responsive layouts.`,
+      type: "section",
+      sections: [
+        { id: "TN-ux-1", title: "Dashboard", content: `Overview of all projects, tasks, and progress in a clean interface.` },
+        { id: "TN-ux-2", title: "Task Management", content: `Create, update, and assign tasks with drag-and-drop support using @hello-pangea/dnd.` },
+        { id: "TN-ux-3", title: "Data Visualization", content: `Charts for task progress, team performance, and deadlines using Recharts.` },
+      ],
+    },
+    {
+      id: "TN-case-6",
+      name: "Challenges & Problem Solving",
+      content: `During development, key challenges included real-time state management, integrating Appwrite backend with React Query, and ensuring smooth drag-and-drop functionality across devices.`,
+      type: "list",
+      lists: [
+        { id: "TN-ch-1", title: "Handling real-time task updates with Appwrite subscriptions." },
+        { id: "TN-ch-2", title: "Ensuring responsive drag-and-drop interactions for tasks." },
+        { id: "TN-ch-3", title: "Optimizing frontend performance while managing complex project states." },
+      ],
+    },
+    {
+      id: "TN-case-7",
+      name: "Responsive Design",
+      content: `Tailwind CSS and mobile-first approach ensured smooth user experience across mobile, tablet, and desktop devices.`,
+      type: "list",
+      lists: [
+        { id: "TN-resp-1", title: "Responsive dashboards and task boards." },
+        { id: "TN-resp-2", title: "Mobile-friendly task management interactions." },
+      ],
+    },
+    {
+      id: "TN-case-8",
+      name: "SEO & Performance Optimization",
+      content: `Next.js features like SSR and static generation were used to improve page load, SEO, and overall performance.`,
+      type: "list",
+      lists: [
+        { id: "TN-opt-1", title: "Server-side rendering for SEO." },
+        { id: "TN-opt-2", title: "Lazy-loading charts and components to improve performance." },
+      ],
+    },
+    {
+      id: "TN-case-9",
+      name: "Results & Outcomes",
+      content: `TaskNest successfully provided a simple, efficient, and responsive project management experience.`,
+      type: "list",
+      lists: [
+        { id: "TN-res-1", title: "Enhanced productivity with streamlined task tracking." },
+        { id: "TN-res-2", title: "Positive user feedback for dashboard clarity and usability." },
+        { id: "TN-res-3", title: "Smooth drag-and-drop and responsive design across all devices." },
+      ],
+    },
+    {
+      id: "TN-case-10",
+      name: "Reflection",
+      content: `This project reinforced the importance of balancing simplicity with functionality. Learned best practices for integrating Appwrite backend with React Query, managing state, and designing user-friendly dashboards.`,
+      type: "list",
+      lists: [
+        { id: "TN-ref-1", title: "Effective state management with React Query improved real-time updates." },
+        { id: "TN-ref-2", title: "Integration of Appwrite simplified backend logic while maintaining flexibility." },
+      ],
+      description: `Future improvements could include automated notifications, deeper analytics, and team collaboration features.`
+    },
+  ],
+},
   {
     id: "SGc2xIM9TVU2TIaVYUHt7IlhrpI2oyFngBeai2ujJSY=",
     title: "ShopBD",
@@ -895,4 +1042,6 @@ export const ProjectsData = [
       },
     ],
   },
+
+
 ];
