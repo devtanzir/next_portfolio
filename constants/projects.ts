@@ -1,156 +1,215 @@
 import ShopBD from "@/public/image/shop-bd.webp";
 import StudyTube from "@/public/image/clean-youtube.webp";
-import TimeZone from "@/public/image/timezone.webp"
-import FoodApp from "@/public/image/food-app.webp"
-import TaskNest from "@/public/image/task-nest.webp"
+import TimeZone from "@/public/image/timezone.webp";
+import FoodApp from "@/public/image/food-app.webp";
+import TaskNest from "@/public/image/task-nest.webp";
 
 export const ProjectsData = [
-    {
-  id: "TNx1234567890", // unique id
-  title: "TaskNest",
-  slug: "tasknest",
-  preview: "https://task-nest-tanzir-ibne-alis-projects.vercel.app/",
-  type: "Project Management",
-  thumbnail: TaskNest,
-  links: [
-    {
-      id: "TN-link-1",
-      title: "live preview",
-      url: "https://task-nest-tanzir-ibne-alis-projects.vercel.app/",
-    },
-    {
-      id: "TN-link-2",
-      title: "frontend",
-      url: "https://github.com/devtanzir/TaskNest--project-management-tool",
-    },
-  ],
-  duration: "4 months",
-  caseStudy: [
-    {
-      id: "TN-case-1",
-      name: "Project Overview",
-      content: `TaskNest is a modern project management tool designed to help individuals and teams easily organize, track, and manage their tasks. The app focuses on simplicity and productivity, allowing users to manage projects efficiently from a single dashboard.`,
-      type: "section",
-      sections: [
-        {
-          id: "TN-section-1",
-          title: "Tech Stack",
-          content: `Next.js 14, React 18, TypeScript, Tailwind CSS, Appwrite (Backend), React Hook Form, TanStack Query & Table, Recharts, Radix UI components, Sonner for notifications.`,
-        },
-        {
-          id: "TN-section-2",
-          title: "Objective",
-          content: `Create a scalable, intuitive project management web application that allows users to create projects, assign tasks, track progress, and visualize data with charts, ensuring high performance and responsive design.`,
-        },
-      ],
-    },
-    {
-      id: "TN-case-2",
-      name: "Problem Statement",
-      content: `Many existing project management tools are either too complex for small teams or lack essential features like task tracking, visual dashboards, and team collaboration. TaskNest aims to address these gaps by providing a balanced, user-friendly solution.`,
-      type: "list",
-      lists: [
-        { id: "TN-prob-1", title: "Simplifying task and project management for individuals and teams." },
-        { id: "TN-prob-2", title: "Providing real-time updates and progress tracking." },
-        { id: "TN-prob-3", title: "Ensuring smooth, responsive, and fast user experience across devices." },
-      ],
-      description: `The app focuses on reducing complexity while maintaining essential productivity features for effective project management.`,
-    },
-    {
-      id: "TN-case-3",
-      name: "Research & Planning",
-      content: `Before building TaskNest, research was conducted on popular project management tools to identify strengths and weaknesses. Key considerations included usability, performance, and collaborative features.`,
-      type: "section",
-      sections: [
-        {
-          id: "TN-res-1",
-          title: "Competitor Analysis",
-          content: `Analyzed tools like Trello, Asana, and Notion for workflow and dashboard design inspiration.`,
-        },
-        {
-          id: "TN-res-2",
-          title: "User Research",
-          content: `Identified common pain points such as overloaded interfaces, difficult navigation, and lack of quick task management features.`,
-        },
-        {
-          id: "TN-res-3",
-          title: "Technology Decisions",
-          content: `Next.js and React for frontend performance, Appwrite for backend simplicity, Tailwind CSS for responsive styling, React Query for state management, and Recharts for data visualization.`,
-        },
-      ],
-    },
-    {
-      id: "TN-case-4",
-      name: "Project Setup",
-      content: `Next.js project setup with TypeScript, Tailwind CSS for styling, and Appwrite for backend services including authentication, database, and storage.`,
-      type: "paragraph",
-    },
-    {
-      id: "TN-case-5",
-      name: "UI/UX Design",
-      content: `Designed with simplicity and usability in mind, focusing on easy navigation, clear dashboards, and responsive layouts.`,
-      type: "section",
-      sections: [
-        { id: "TN-ux-1", title: "Dashboard", content: `Overview of all projects, tasks, and progress in a clean interface.` },
-        { id: "TN-ux-2", title: "Task Management", content: `Create, update, and assign tasks with drag-and-drop support using @hello-pangea/dnd.` },
-        { id: "TN-ux-3", title: "Data Visualization", content: `Charts for task progress, team performance, and deadlines using Recharts.` },
-      ],
-    },
-    {
-      id: "TN-case-6",
-      name: "Challenges & Problem Solving",
-      content: `During development, key challenges included real-time state management, integrating Appwrite backend with React Query, and ensuring smooth drag-and-drop functionality across devices.`,
-      type: "list",
-      lists: [
-        { id: "TN-ch-1", title: "Handling real-time task updates with Appwrite subscriptions." },
-        { id: "TN-ch-2", title: "Ensuring responsive drag-and-drop interactions for tasks." },
-        { id: "TN-ch-3", title: "Optimizing frontend performance while managing complex project states." },
-      ],
-    },
-    {
-      id: "TN-case-7",
-      name: "Responsive Design",
-      content: `Tailwind CSS and mobile-first approach ensured smooth user experience across mobile, tablet, and desktop devices.`,
-      type: "list",
-      lists: [
-        { id: "TN-resp-1", title: "Responsive dashboards and task boards." },
-        { id: "TN-resp-2", title: "Mobile-friendly task management interactions." },
-      ],
-    },
-    {
-      id: "TN-case-8",
-      name: "SEO & Performance Optimization",
-      content: `Next.js features like SSR and static generation were used to improve page load, SEO, and overall performance.`,
-      type: "list",
-      lists: [
-        { id: "TN-opt-1", title: "Server-side rendering for SEO." },
-        { id: "TN-opt-2", title: "Lazy-loading charts and components to improve performance." },
-      ],
-    },
-    {
-      id: "TN-case-9",
-      name: "Results & Outcomes",
-      content: `TaskNest successfully provided a simple, efficient, and responsive project management experience.`,
-      type: "list",
-      lists: [
-        { id: "TN-res-1", title: "Enhanced productivity with streamlined task tracking." },
-        { id: "TN-res-2", title: "Positive user feedback for dashboard clarity and usability." },
-        { id: "TN-res-3", title: "Smooth drag-and-drop and responsive design across all devices." },
-      ],
-    },
-    {
-      id: "TN-case-10",
-      name: "Reflection",
-      content: `This project reinforced the importance of balancing simplicity with functionality. Learned best practices for integrating Appwrite backend with React Query, managing state, and designing user-friendly dashboards.`,
-      type: "list",
-      lists: [
-        { id: "TN-ref-1", title: "Effective state management with React Query improved real-time updates." },
-        { id: "TN-ref-2", title: "Integration of Appwrite simplified backend logic while maintaining flexibility." },
-      ],
-      description: `Future improvements could include automated notifications, deeper analytics, and team collaboration features.`
-    },
-  ],
-},
+  {
+    id: "TNx1234567890", // unique id
+    title: "TaskNest",
+    slug: "tasknest",
+    preview: "https://task-nest-tanzir-ibne-alis-projects.vercel.app/",
+    type: "Project Management",
+    thumbnail: TaskNest,
+    links: [
+      {
+        id: "TN-link-1",
+        title: "live preview",
+        url: "https://task-nest-tanzir-ibne-alis-projects.vercel.app/",
+      },
+      {
+        id: "TN-link-2",
+        title: "frontend",
+        url: "https://github.com/devtanzir/TaskNest--project-management-tool",
+      },
+    ],
+    duration: "4 months",
+    caseStudy: [
+      {
+        id: "TN-case-1",
+        name: "Project Overview",
+        content: `TaskNest is a modern project management tool designed to help individuals and teams easily organize, track, and manage their tasks. The app focuses on simplicity and productivity, allowing users to manage projects efficiently from a single dashboard.`,
+        type: "section",
+        sections: [
+          {
+            id: "TN-section-1",
+            title: "Tech Stack",
+            content: `Next.js 14, React 18, TypeScript, Tailwind CSS, Appwrite (Backend), React Hook Form, TanStack Query & Table, Recharts, Radix UI components, Sonner for notifications.`,
+          },
+          {
+            id: "TN-section-2",
+            title: "Objective",
+            content: `Create a scalable, intuitive project management web application that allows users to create projects, assign tasks, track progress, and visualize data with charts, ensuring high performance and responsive design.`,
+          },
+        ],
+      },
+      {
+        id: "TN-case-2",
+        name: "Problem Statement",
+        content: `Many existing project management tools are either too complex for small teams or lack essential features like task tracking, visual dashboards, and team collaboration. TaskNest aims to address these gaps by providing a balanced, user-friendly solution.`,
+        type: "list",
+        lists: [
+          {
+            id: "TN-prob-1",
+            title:
+              "Simplifying task and project management for individuals and teams.",
+          },
+          {
+            id: "TN-prob-2",
+            title: "Providing real-time updates and progress tracking.",
+          },
+          {
+            id: "TN-prob-3",
+            title:
+              "Ensuring smooth, responsive, and fast user experience across devices.",
+          },
+        ],
+        description: `The app focuses on reducing complexity while maintaining essential productivity features for effective project management.`,
+      },
+      {
+        id: "TN-case-3",
+        name: "Research & Planning",
+        content: `Before building TaskNest, research was conducted on popular project management tools to identify strengths and weaknesses. Key considerations included usability, performance, and collaborative features.`,
+        type: "section",
+        sections: [
+          {
+            id: "TN-res-1",
+            title: "Competitor Analysis",
+            content: `Analyzed tools like Trello, Asana, and Notion for workflow and dashboard design inspiration.`,
+          },
+          {
+            id: "TN-res-2",
+            title: "User Research",
+            content: `Identified common pain points such as overloaded interfaces, difficult navigation, and lack of quick task management features.`,
+          },
+          {
+            id: "TN-res-3",
+            title: "Technology Decisions",
+            content: `Next.js and React for frontend performance, Appwrite for backend simplicity, Tailwind CSS for responsive styling, React Query for state management, and Recharts for data visualization.`,
+          },
+        ],
+      },
+      {
+        id: "TN-case-4",
+        name: "Project Setup",
+        content: `Next.js project setup with TypeScript, Tailwind CSS for styling, and Appwrite for backend services including authentication, database, and storage.`,
+        type: "paragraph",
+      },
+      {
+        id: "TN-case-5",
+        name: "UI/UX Design",
+        content: `Designed with simplicity and usability in mind, focusing on easy navigation, clear dashboards, and responsive layouts.`,
+        type: "section",
+        sections: [
+          {
+            id: "TN-ux-1",
+            title: "Dashboard",
+            content: `Overview of all projects, tasks, and progress in a clean interface.`,
+          },
+          {
+            id: "TN-ux-2",
+            title: "Task Management",
+            content: `Create, update, and assign tasks with drag-and-drop support using @hello-pangea/dnd.`,
+          },
+          {
+            id: "TN-ux-3",
+            title: "Data Visualization",
+            content: `Charts for task progress, team performance, and deadlines using Recharts.`,
+          },
+        ],
+      },
+      {
+        id: "TN-case-6",
+        name: "Challenges & Problem Solving",
+        content: `During development, key challenges included real-time state management, integrating Appwrite backend with React Query, and ensuring smooth drag-and-drop functionality across devices.`,
+        type: "list",
+        lists: [
+          {
+            id: "TN-ch-1",
+            title:
+              "Handling real-time task updates with Appwrite subscriptions.",
+          },
+          {
+            id: "TN-ch-2",
+            title: "Ensuring responsive drag-and-drop interactions for tasks.",
+          },
+          {
+            id: "TN-ch-3",
+            title:
+              "Optimizing frontend performance while managing complex project states.",
+          },
+        ],
+      },
+      {
+        id: "TN-case-7",
+        name: "Responsive Design",
+        content: `Tailwind CSS and mobile-first approach ensured smooth user experience across mobile, tablet, and desktop devices.`,
+        type: "list",
+        lists: [
+          { id: "TN-resp-1", title: "Responsive dashboards and task boards." },
+          {
+            id: "TN-resp-2",
+            title: "Mobile-friendly task management interactions.",
+          },
+        ],
+      },
+      {
+        id: "TN-case-8",
+        name: "SEO & Performance Optimization",
+        content: `Next.js features like SSR and static generation were used to improve page load, SEO, and overall performance.`,
+        type: "list",
+        lists: [
+          { id: "TN-opt-1", title: "Server-side rendering for SEO." },
+          {
+            id: "TN-opt-2",
+            title: "Lazy-loading charts and components to improve performance.",
+          },
+        ],
+      },
+      {
+        id: "TN-case-9",
+        name: "Results & Outcomes",
+        content: `TaskNest successfully provided a simple, efficient, and responsive project management experience.`,
+        type: "list",
+        lists: [
+          {
+            id: "TN-res-1",
+            title: "Enhanced productivity with streamlined task tracking.",
+          },
+          {
+            id: "TN-res-2",
+            title:
+              "Positive user feedback for dashboard clarity and usability.",
+          },
+          {
+            id: "TN-res-3",
+            title:
+              "Smooth drag-and-drop and responsive design across all devices.",
+          },
+        ],
+      },
+      {
+        id: "TN-case-10",
+        name: "Reflection",
+        content: `This project reinforced the importance of balancing simplicity with functionality. Learned best practices for integrating Appwrite backend with React Query, managing state, and designing user-friendly dashboards.`,
+        type: "list",
+        lists: [
+          {
+            id: "TN-ref-1",
+            title:
+              "Effective state management with React Query improved real-time updates.",
+          },
+          {
+            id: "TN-ref-2",
+            title:
+              "Integration of Appwrite simplified backend logic while maintaining flexibility.",
+          },
+        ],
+        description: `Future improvements could include automated notifications, deeper analytics, and team collaboration features.`,
+      },
+    ],
+  },
   {
     id: "SGc2xIM9TVU2TIaVYUHt7IlhrpI2oyFngBeai2ujJSY=",
     title: "ShopBD",
@@ -196,8 +255,7 @@ export const ProjectsData = [
             title: "Objective",
             content: `Build a scalable and responsive e-commerce platform with secure payment integration with stripe, product management, and an admin dashboard by strapi.`,
           },
-        ]
-
+        ],
       },
       {
         id: "TdxqevqQwMQNKbPtuBi37ikIrIVTOURwiJU8DBM1G9w=",
@@ -224,8 +282,7 @@ export const ProjectsData = [
         ],
         description: `The client needed a site that could handle a variety of
                 products, provide clear navigation, and make purchasing as
-                frictionless as possible.`
-
+                frictionless as possible.`,
       },
       {
         id: "cIgUE2bNJw0+z2tTnzsC33LmA5YL4aVXkayodFcW1Nw=",
@@ -292,8 +349,7 @@ export const ProjectsData = [
             content: `User-friendly design with clear CTAs to increase conversion
                     rates.`,
           },
-        ]
-
+        ],
       },
       {
         id: "CHIvtWawGazQArtrbUBVQggpKDBE9kEjCFeJIaTP7MU=",
@@ -317,7 +373,6 @@ export const ProjectsData = [
               "Handling of adding/removing items and applying discount codes.",
           },
         ],
-
       },
       {
         id: "ITVhvu+/Vikjs/wezjpe+k0jRyMTk4HBSEsFWVffMwQ=",
@@ -346,7 +401,6 @@ export const ProjectsData = [
               "Mobile-first approach for layout, especially in the checkout flow.",
           },
         ],
-
       },
       {
         id: "n6bRsamquxWMJH1JAX3dCy1pmPr1kVRdUGqgne38d/c=",
@@ -367,7 +421,6 @@ export const ProjectsData = [
               "SEO by ensuring that search engines could crawl the site effectively.",
           },
         ],
-
       },
       {
         id: "GKp/FOU0xdfTb6iO4D267v/WA1Hg40NkaXbT7AI1Sss=",
@@ -393,7 +446,6 @@ export const ProjectsData = [
               "The responsive design improved mobile traffic by 40%, as users could easily shop on their phones without any usability issues.",
           },
         ],
-
       },
       {
         id: "rMWcZ6dPiMFsG+fd9EBqVZMP4ZXvc3zYUuRS9gdjDx0=",
@@ -416,7 +468,7 @@ export const ProjectsData = [
               "Integration of Stripe simplified payment handling and provided a secure solution.",
           },
         ],
-        description: `Future improvements could include more automated testing for edge cases, especially in the checkout process.`
+        description: `Future improvements could include more automated testing for edge cases, especially in the checkout process.`,
       },
     ],
   },
@@ -452,8 +504,7 @@ export const ProjectsData = [
             title: "Tech Stack",
             content: `React.js, javaScript, Material UI, easypeasy, lottie, Prop-types, etc.`,
           },
-        ]
-
+        ],
       },
       {
         id: "8Lm3jjP1SVEyCFopCR9LhmTS3mbmacLAtBFRuh4G3Qk=",
@@ -468,7 +519,8 @@ export const ProjectsData = [
           },
           {
             id: "SY4sv7TxrXi7yXnb+BBXiHI/H6OACpesTZ5W907iRDc=",
-            title: "Provide a smooth and seamless experience on both desktop and mobile devices.",
+            title:
+              "Provide a smooth and seamless experience on both desktop and mobile devices.",
           },
           {
             id: "hVmtBtahweMCTg1zHT2b/H+Q1Us3khfbMh8J5rfE9tE=",
@@ -521,8 +573,7 @@ export const ProjectsData = [
             title: "Performance Optimizations",
             content: `By utilizing Next.js's server-side rendering and Vercel for fast content delivery, the platform was optimized for speed. Lazy loading was also used for assets such as images and videos to enhance the user experience.`,
           },
-        ]
-
+        ],
       },
       {
         id: "AC3Pb3863vZxldYE+yZ4VinEr9pH+/D2sHex6yrTM8U=",
@@ -537,7 +588,6 @@ export const ProjectsData = [
             title: "all type of video content.",
           },
         ],
-
       },
       {
         id: "qEesca/eklSTSSfdhQPLhzoCcnHYSgS63go0nKEWACU=",
@@ -558,7 +608,6 @@ export const ProjectsData = [
             title: "Responsive grids for Playlist listings.",
           },
         ],
-
       },
       {
         id: "gAtaRCRrVHC5qeEDO9c9rd+4gMG1WJCNMrt/VwqJkbo=",
@@ -571,7 +620,6 @@ export const ProjectsData = [
             title: "Loading times for users with slow internet connections.",
           },
         ],
-
       },
       {
         id: "HoJjy+7hEgvKyRxDDT3gfVrwtBYGyzPH5YM54LTnoi4=",
@@ -597,7 +645,6 @@ export const ProjectsData = [
               "The responsive design improved mobile traffic by 20%, as users could easily shop on their phones without any usability issues.",
           },
         ],
-
       },
       {
         id: "k4q95ys5qGY5/Z+kJmyqSV085VEee0cHF3QsVEbNt30=",
@@ -656,7 +703,7 @@ export const ProjectsData = [
             title: "Tech Stack",
             content: `React, Vite, Express, MongoDB, Styled-Components, Axios, etc.`,
           },
-        ]
+        ],
       },
       {
         id: "WsecerBSr5OQnTK0qjlFKlEMuqpkCrvsgg6EAlHdpl0=",
@@ -671,7 +718,8 @@ export const ProjectsData = [
           },
           {
             id: "ncFOOHQr7z/IT49pN66HawMK6xUchVI77a9MhcVZcIM=",
-            title: "Ensure smooth and fast interactions across various devices and browsers.",
+            title:
+              "Ensure smooth and fast interactions across various devices and browsers.",
           },
           {
             id: "crlztdhJbYmrPeuuZOQZrCc1owMze4d9LLwMfROYvp4=",
@@ -721,7 +769,7 @@ export const ProjectsData = [
             title: "API Integration",
             content: `Axios is used for seamless API requests, handling both data fetching and form submission efficiently.`,
           },
-        ]
+        ],
       },
       {
         id: "bQsyAHwnL8JxXXjsJReZ53yrY1b5hxHQi6XXzzSa+tQ=",
@@ -743,56 +791,56 @@ export const ProjectsData = [
             title: "Scalability",
             content: `The backend is structured for easy expansion, with Mongoose schemas that can accommodate additional features and data as the project grows.`,
           },
-        ]
+        ],
       },
       {
         id: "IVKy0qv/HUxXUNlkb3nb35UeyDA8IpDdg0Q/jMrTLx8=",
         name: "Key Features",
         type: "section",
         sections: [
-                  {
-                    id: "vIPRvXA3xIxC+im4z50Pq4iih9bUX9dWAR/ule9+UWg=",
-                    title: "Real-time Data Tracking",
-                    content: `Users can add, edit, and remove data points dynamically, with immediate visual feedback.`,
-                  },
-                  {
-                    id: "gVSKzOa2so9piDOjiB10ukJdopKYtv6jBlIpdsu4wHw=",
-                    title: "Responsive Design",
-                    content: `Optimized for desktop and mobile, Track Zone offers a consistent experience across various devices.`,
-                  },
-                  {
-                    id: "Uq14fw4LoqcBerTJ1/EF8UWGkJW/pgoXPNPhOgM5Hps=",
-                    title: "Notifications",
-                    content: `Real-time feedback via toast notifications enhances interactivity and keeps users informed.`,
-                  },
-                  {
-                    id: "IOhIJmwGOZus6KSbQbGJQO2TUAsUtn2Dt9vorAai7bU=",
-                    title: "Fast Load Times",
-                    content: `Leveraging Vite’s quick refresh and lightweight bundling, the site is responsive and fast.`,
-                  },
-        ]
+          {
+            id: "vIPRvXA3xIxC+im4z50Pq4iih9bUX9dWAR/ule9+UWg=",
+            title: "Real-time Data Tracking",
+            content: `Users can add, edit, and remove data points dynamically, with immediate visual feedback.`,
+          },
+          {
+            id: "gVSKzOa2so9piDOjiB10ukJdopKYtv6jBlIpdsu4wHw=",
+            title: "Responsive Design",
+            content: `Optimized for desktop and mobile, Track Zone offers a consistent experience across various devices.`,
+          },
+          {
+            id: "Uq14fw4LoqcBerTJ1/EF8UWGkJW/pgoXPNPhOgM5Hps=",
+            title: "Notifications",
+            content: `Real-time feedback via toast notifications enhances interactivity and keeps users informed.`,
+          },
+          {
+            id: "IOhIJmwGOZus6KSbQbGJQO2TUAsUtn2Dt9vorAai7bU=",
+            title: "Fast Load Times",
+            content: `Leveraging Vite’s quick refresh and lightweight bundling, the site is responsive and fast.`,
+          },
+        ],
       },
       {
         id: "k6hnCdcIg6TPaFmQUy4jEauCg6McDDQCsPEVdITxnXs=",
         name: "Challenges & Solutions",
         type: "section",
         sections: [
-                  {
-                    id: "QeD/Qv/DsW7MS00QZSVvutRp6MO/0u0H6/w6PwYbfvA=",
-                    title: "API Response Time",
-                    content: `Initial testing showed slight lags in API response times. By optimizing database queries and reducing payloads, the response time was improved significantly.`,
-                  },
-                  {
-                    id: "WB89k+LWJWtldu/J0vC6nsIAkU97ZeIIZJF+RTk7s4Q=",
-                    title: "Data Consistency",
-                    content: `Ensuring data integrity was a priority. Mongoose validations and custom error handling in Express were implemented to avoid invalid or incomplete data entries.`,
-                  },
-                  {
-                    id: "pkwNLH9hL1HmUCoyaOUZALR9ZwIywX6Dy8QDQ2K02Ww=",
-                    title: "Cross-Origin Requests",
-                    content: `During deployment, handling CORS became a challenge as the frontend and backend were hosted on separate domains. The issue was resolved by configuring the Express server with flexible CORS settings for development and production environments.`,
-                  },
-        ]
+          {
+            id: "QeD/Qv/DsW7MS00QZSVvutRp6MO/0u0H6/w6PwYbfvA=",
+            title: "API Response Time",
+            content: `Initial testing showed slight lags in API response times. By optimizing database queries and reducing payloads, the response time was improved significantly.`,
+          },
+          {
+            id: "WB89k+LWJWtldu/J0vC6nsIAkU97ZeIIZJF+RTk7s4Q=",
+            title: "Data Consistency",
+            content: `Ensuring data integrity was a priority. Mongoose validations and custom error handling in Express were implemented to avoid invalid or incomplete data entries.`,
+          },
+          {
+            id: "pkwNLH9hL1HmUCoyaOUZALR9ZwIywX6Dy8QDQ2K02Ww=",
+            title: "Cross-Origin Requests",
+            content: `During deployment, handling CORS became a challenge as the frontend and backend were hosted on separate domains. The issue was resolved by configuring the Express server with flexible CORS settings for development and production environments.`,
+          },
+        ],
       },
       {
         id: "EP93Cps1RMac4aGj8+M2LrQC8fx6zzIVeA01AHeaBSQ=",
@@ -800,17 +848,17 @@ export const ProjectsData = [
         content: `Track Zone’s launch demonstrated the effectiveness of a streamlined tech stack and a user-focused design. Users reported`,
         type: "section",
         sections: [
-                  {
-                    id: "NH7ctvY9TB4sT/BphhfT6NHuW61IGtYHQxoRO3WnYbE=",
-                    title: "Improved Efficiency",
-                    content: `Real-time tracking features helped users manage and monitor their data more efficiently.`,
-                  },
-                  {
-                    id: "P6Ag/kmR7E0eACGpd3Mko4sXlfFhALVpUYAijOGPr8Y=",
-                    title: "Positive Feedback on UX",
-                    content: `The responsive design and clear notifications significantly enhanced user satisfaction.`,
-                  },
-        ]
+          {
+            id: "NH7ctvY9TB4sT/BphhfT6NHuW61IGtYHQxoRO3WnYbE=",
+            title: "Improved Efficiency",
+            content: `Real-time tracking features helped users manage and monitor their data more efficiently.`,
+          },
+          {
+            id: "P6Ag/kmR7E0eACGpd3Mko4sXlfFhALVpUYAijOGPr8Y=",
+            title: "Positive Feedback on UX",
+            content: `The responsive design and clear notifications significantly enhanced user satisfaction.`,
+          },
+        ],
       },
       {
         id: "A/Pb2NY06OvZ/CSRnQa9TK2+vf6XHx/slG6efp5uTBI=",
@@ -818,22 +866,22 @@ export const ProjectsData = [
         content: `In future iterations, Track Zone may expand to include`,
         type: "section",
         sections: [
-                  {
-                    id: "SFVOiO477iNMHH61YGDvB+jQYp6iOexTKIwFZNA2hUs=",
-                    title: "User Authentication",
-                    content: `Adding secure login features.`,
-                  },
-                  {
-                    id: "V1ky2mj2Hbf7Zb4NJCPkDmWwBogtWJxKgxXwYdZ0Ft0=",
-                    title: "Advanced Data Analytics",
-                    content: `Integrating data visualization libraries to provide detailed insights.`,
-                  },
-                  {
-                    id: "+WK5vVqZK6vOSB+M54gN4+G/izvAbQcy4ZXcOSv20JI=",
-                    title: "Push Notifications",
-                    content: `Sending alerts to users even when they’re not on the site.`,
-                  },
-        ]
+          {
+            id: "SFVOiO477iNMHH61YGDvB+jQYp6iOexTKIwFZNA2hUs=",
+            title: "User Authentication",
+            content: `Adding secure login features.`,
+          },
+          {
+            id: "V1ky2mj2Hbf7Zb4NJCPkDmWwBogtWJxKgxXwYdZ0Ft0=",
+            title: "Advanced Data Analytics",
+            content: `Integrating data visualization libraries to provide detailed insights.`,
+          },
+          {
+            id: "+WK5vVqZK6vOSB+M54gN4+G/izvAbQcy4ZXcOSv20JI=",
+            title: "Push Notifications",
+            content: `Sending alerts to users even when they’re not on the site.`,
+          },
+        ],
       },
       {
         id: "KWmnrHw+SaHuntT5l0DVA0NDgJFKAZPFBoSPSIod+7k=",
@@ -875,7 +923,7 @@ export const ProjectsData = [
             title: "Tech Stack",
             content: `React, Vite, Bootstrap, React Router, etc.`,
           },
-        ]
+        ],
       },
       {
         id: "2BOBaO5AxZMJPLLEgj7LmwVLmD8VyHXzBOl+jFg6dss=",
@@ -898,7 +946,7 @@ export const ProjectsData = [
             title: "Brand Identity",
             content: `Reflect a fresh and inviting brand identity, appealing to a wide audience.`,
           },
-        ]
+        ],
       },
       {
         id: "5UlHCbdlYHOwTMOfcgkShxgBXWaz3dVRY2WARnFr/bQ=",
@@ -920,7 +968,7 @@ export const ProjectsData = [
             title: "Brand Colors and Fonts",
             content: `A color scheme and font selection were used to align with the brand’s identity, creating an inviting and appetizing look.`,
           },
-        ]
+        ],
       },
       {
         id: "t0a8KH9fHWdvfiXnZRj/VLBrzbt4wz1K2VA+VlPm9VU=",
@@ -942,56 +990,56 @@ export const ProjectsData = [
             title: "Routing with React Router",
             content: `Although this is a single-page landing app, React Router sets the groundwork for potential navigation to different sections or future pages, enhancing scalability.`,
           },
-        ]
+        ],
       },
       {
         id: "qlTrd2s/g2VLv1uSFWABtyMlKDSumn5XTZhyWPfNfRY=",
         name: "Key Features",
         type: "section",
         sections: [
-                  {
-                    id: "mI9mFp6/XIpwFEABVA0AgmnR+t4NKOrZFIL/Q1Z+Ekw=",
-                    title: "Responsive Layout",
-                    content: `Optimized to work on various screen sizes, providing consistent functionality and design across devices.`,
-                  },
-                  {
-                    id: "sj5PtMybu3gNezUREGyxeuOM0ez3mXFJ6pC/4wFSnP8=",
-                    title: "Dynamic Menu Display",
-                    content: `The menu section is organized to be easy to browse and appealing to users, using Bootstrap components for a clean and organized look.`,
-                  },
-                  {
-                    id: "jln0KpdsSDyFtOWRWM9TGD/USlNJU2YhCTGl5aQcVmg=",
-                    title: "User Reviews",
-                    content: `Displaying customer testimonials builds trust and gives credibility to the service.`,
-                  },
-                  {
-                    id: "3pADeUN9EhDn9SncUDT4sVi/Xmv/Y4Zkfm9GE1uD5IE=",
-                    title: "Call-to-Action",
-                    content: `Buttons and links direct users to action points, such as ordering or learning more about the service, encouraging engagement.`,
-                  },
-        ]
+          {
+            id: "mI9mFp6/XIpwFEABVA0AgmnR+t4NKOrZFIL/Q1Z+Ekw=",
+            title: "Responsive Layout",
+            content: `Optimized to work on various screen sizes, providing consistent functionality and design across devices.`,
+          },
+          {
+            id: "sj5PtMybu3gNezUREGyxeuOM0ez3mXFJ6pC/4wFSnP8=",
+            title: "Dynamic Menu Display",
+            content: `The menu section is organized to be easy to browse and appealing to users, using Bootstrap components for a clean and organized look.`,
+          },
+          {
+            id: "jln0KpdsSDyFtOWRWM9TGD/USlNJU2YhCTGl5aQcVmg=",
+            title: "User Reviews",
+            content: `Displaying customer testimonials builds trust and gives credibility to the service.`,
+          },
+          {
+            id: "3pADeUN9EhDn9SncUDT4sVi/Xmv/Y4Zkfm9GE1uD5IE=",
+            title: "Call-to-Action",
+            content: `Buttons and links direct users to action points, such as ordering or learning more about the service, encouraging engagement.`,
+          },
+        ],
       },
       {
         id: "/TDvgPLeTcvQlKK0tJrGWHvwOlV9Jt/S7Nj86p18YCo=",
         name: "Challenges & Solutions",
         type: "section",
         sections: [
-                  {
-                    id: "KSLyBBY/5U4Tg6hgSmOI1wKujvo6svDIaR0juSxZuMg=",
-                    title: "Cross-Device Responsiveness",
-                    content: `Ensuring that all components adjusted correctly across device types was initially challenging. Bootstrap’s responsive grid system and media queries were used to achieve a consistent look.`,
-                  },
-                  {
-                    id: "TGl62wY5ZUSK0+jwqxX1eb9whzxM/4emb89xrV31tcs=",
-                    title: "Loading Speed",
-                    content: `Initial load times were a priority, especially for mobile. Vite’s optimized build process and lightweight asset management reduced load times significantly.`,
-                  },
-                  {
-                    id: "SUUNKzze4hzFHJJ+DIGXUXQlTZspBFg09UZYvDnQpU0=",
-                    title: "User Engagement",
-                    content: `To create a highly engaging experience, clear call-to-actions and an intuitive layout were tested and refined based on user feedback.`,
-                  },
-        ]
+          {
+            id: "KSLyBBY/5U4Tg6hgSmOI1wKujvo6svDIaR0juSxZuMg=",
+            title: "Cross-Device Responsiveness",
+            content: `Ensuring that all components adjusted correctly across device types was initially challenging. Bootstrap’s responsive grid system and media queries were used to achieve a consistent look.`,
+          },
+          {
+            id: "TGl62wY5ZUSK0+jwqxX1eb9whzxM/4emb89xrV31tcs=",
+            title: "Loading Speed",
+            content: `Initial load times were a priority, especially for mobile. Vite’s optimized build process and lightweight asset management reduced load times significantly.`,
+          },
+          {
+            id: "SUUNKzze4hzFHJJ+DIGXUXQlTZspBFg09UZYvDnQpU0=",
+            title: "User Engagement",
+            content: `To create a highly engaging experience, clear call-to-actions and an intuitive layout were tested and refined based on user feedback.`,
+          },
+        ],
       },
       {
         id: "SUUNKzze4hzFHJJ+grstHGARciTP6IASb75EURqBbjGzJDZoUqKfjASgQeA==",
@@ -999,17 +1047,17 @@ export const ProjectsData = [
         content: `The Food App landing page succeeded in creating a polished, professional, and inviting introduction to the food service. Users experienced`,
         type: "section",
         sections: [
-                  {
-                    id: "YsEyvjKuEfPeEeAbtoPxE7NOGSBNlIojDg0wdtbrypg=",
-                    title: "Higher Engagement",
-                    content: `Visitors interacted more with the menu and call-to-action buttons, spending longer on the site.`,
-                  },
-                  {
-                    id: "6/lay1MH7qFVQYrdkpU3ghDkWdv3ALb2AvOflHidVRA=",
-                    title: "Positive User Feedback",
-                    content: `Users noted the simplicity and appeal of the design, which helped foster trust and interest.`,
-                  },
-        ]
+          {
+            id: "YsEyvjKuEfPeEeAbtoPxE7NOGSBNlIojDg0wdtbrypg=",
+            title: "Higher Engagement",
+            content: `Visitors interacted more with the menu and call-to-action buttons, spending longer on the site.`,
+          },
+          {
+            id: "6/lay1MH7qFVQYrdkpU3ghDkWdv3ALb2AvOflHidVRA=",
+            title: "Positive User Feedback",
+            content: `Users noted the simplicity and appeal of the design, which helped foster trust and interest.`,
+          },
+        ],
       },
       {
         id: "+yTDbLfIP7v4FNKqqAnvyu0yBrdQAPEWw11FiRKWJKc=",
@@ -1017,22 +1065,22 @@ export const ProjectsData = [
         content: `To enhance the app further, future plans include`,
         type: "section",
         sections: [
-                  {
-                    id: "JUW39JPwnA7gTYDOShidM94tUWVXWKhe6pgdmjDKIzQ=",
-                    title: "Adding Authentication",
-                    content: `To allow users to create accounts and save orders.`,
-                  },
-                  {
-                    id: "j02325rAeTj/mXUj0UMABuoBQMvma8vckPiGgrG9+Kc=",
-                    title: "Order Integration",
-                    content: `Adding an ordering feature, making it possible for users to order food directly from the app.`,
-                  },
-                  {
-                    id: "bBVl/U+fScCrJuXOYqcgyQjMYt6VEIvAVfQxw4V00bE=",
-                    title: "Expanded Menu & Sections",
-                    content: `Adding more detailed sections for nutrition info, chef specials, and seasonal items.`,
-                  },
-        ]
+          {
+            id: "JUW39JPwnA7gTYDOShidM94tUWVXWKhe6pgdmjDKIzQ=",
+            title: "Adding Authentication",
+            content: `To allow users to create accounts and save orders.`,
+          },
+          {
+            id: "j02325rAeTj/mXUj0UMABuoBQMvma8vckPiGgrG9+Kc=",
+            title: "Order Integration",
+            content: `Adding an ordering feature, making it possible for users to order food directly from the app.`,
+          },
+          {
+            id: "bBVl/U+fScCrJuXOYqcgyQjMYt6VEIvAVfQxw4V00bE=",
+            title: "Expanded Menu & Sections",
+            content: `Adding more detailed sections for nutrition info, chef specials, and seasonal items.`,
+          },
+        ],
       },
       {
         id: "EMhCX8DQUuvj46+4uY8QhS7EvfLJMN6AL0bQfPE/ryQ=",
@@ -1042,6 +1090,4 @@ export const ProjectsData = [
       },
     ],
   },
-
-
 ];
