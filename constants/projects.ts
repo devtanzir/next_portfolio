@@ -1,8 +1,9 @@
 import ShopBD from "@/public/image/shop-bd.webp";
-import StudyTube from "@/public/image/clean-youtube.webp";
-import TimeZone from "@/public/image/timezone.webp";
+import StudyTube from "@/public/image/studytube.webp";
+import TimeZone from "@/public/image/trackzone.webp";
 import FoodApp from "@/public/image/food-app.webp";
-import TaskNest from "@/public/image/task-nest.webp";
+import TaskNest from "@/public/image/tasknest.webp";
+import SAAMeetingThumbnail from "@/public/image/meeting-schedule.webp";
 
 export const ProjectsData = [
   {
@@ -210,6 +211,214 @@ export const ProjectsData = [
       },
     ],
   },
+    {
+  id: "SAAxMEET001",
+  title: "Meeting Scheduler",
+  slug: "saa-meeting",
+  preview: "https://saa-meeting-frontend.vercel.app/",
+  type: "Web App",
+  thumbnail: SAAMeetingThumbnail,
+  links: [
+    {
+      id: "SAA-link-1",
+      title: "live preview",
+      url: "https://saa-meeting-frontend.vercel.app/",
+    },
+    {
+      id: "SAA-link-2",
+      title: "frontend",
+      url: "https://github.com/devtanzir/saa-meeting-frontend",
+    },
+    {
+      id: "SAA-link-3",
+      title: "backend",
+      url: "https://github.com/devtanzir/scaleup-meeting",
+    },
+  ],
+  duration: "1 Month",
+  caseStudy: [
+    {
+      id: "SAA-case-1",
+      name: "Project Overview",
+      content: `SAA Meeting is a custom-built meeting management platform developed to solve real-world communication challenges faced by my office team while scheduling and conducting meetings with international clients. The platform streamlines meeting scheduling, management, and participation, reducing dependency on multiple third-party tools.`,
+      type: "section",
+      sections: [
+        {
+          id: "SAA-sec-1",
+          title: "Tech Stack",
+          content: `Next.js, React, TypeScript, Tailwind CSS, Node.js, Custom Backend APIs, Authentication, RESTful services.`,
+        },
+        {
+          id: "SAA-sec-2",
+          title: "Objective",
+          content: `Build a reliable and easy-to-use meeting platform that simplifies communication with international clients, improves scheduling efficiency, and reduces operational friction in daily office workflows.`,
+        },
+      ],
+    },
+    {
+      id: "SAA-case-2",
+      name: "Problem Statement",
+      content: `The office team frequently faced difficulties managing meetings with foreign clients due to time zone differences, unreliable scheduling processes, and scattered communication tools.`,
+      type: "list",
+      lists: [
+        {
+          id: "SAA-prob-1",
+          title: "Manual and error-prone meeting scheduling across time zones.",
+        },
+        {
+          id: "SAA-prob-2",
+          title: "Dependence on multiple tools for meetings, links, and coordination.",
+        },
+        {
+          id: "SAA-prob-3",
+          title: "Lack of a centralized platform to manage client meetings efficiently.",
+        },
+      ],
+      description: `The goal was to create a single internal solution that addressed these pain points while remaining simple and scalable.`,
+    },
+    {
+      id: "SAA-case-3",
+      name: "Research & Planning",
+      content: `Initial research involved understanding how popular meeting platforms handle scheduling, access control, and user experience, while identifying gaps relevant to internal office needs.`,
+      type: "section",
+      sections: [
+        {
+          id: "SAA-res-1",
+          title: "Workflow Analysis",
+          content: `Analyzed internal meeting workflows to identify repetitive tasks and inefficiencies.`,
+        },
+        {
+          id: "SAA-res-2",
+          title: "Client Interaction Study",
+          content: `Reviewed common issues faced during meetings with international clients, including time zone conflicts and link management.`,
+        },
+        {
+          id: "SAA-res-3",
+          title: "Technical Planning",
+          content: `Decided to build both frontend and backend from scratch to ensure full control over features, security, and scalability.`,
+        },
+      ],
+    },
+    {
+      id: "SAA-case-4",
+      name: "Project Setup",
+      content: `The frontend was built using Next.js with TypeScript for maintainability, while the backend was designed to handle meeting data, user authentication, and scheduling logic.`,
+      type: "paragraph",
+    },
+    {
+      id: "SAA-case-5",
+      name: "UI/UX Design",
+      content: `The UI was designed with a focus on clarity and speed, ensuring users could schedule or join meetings with minimal steps.`,
+      type: "section",
+      sections: [
+        {
+          id: "SAA-ui-1",
+          title: "Dashboard",
+          content: `Centralized dashboard showing upcoming meetings and client details.`,
+        },
+        {
+          id: "SAA-ui-2",
+          title: "Meeting Creation",
+          content: `Simple form-based meeting creation with clear date and time selection.`,
+        },
+        {
+          id: "SAA-ui-3",
+          title: "Client Access",
+          content: `Easy-to-share meeting links for external clients with minimal friction.`,
+        },
+      ],
+    },
+    {
+      id: "SAA-case-6",
+      name: "Challenges & Problem Solving",
+      content: `Developing a full-stack meeting platform within a limited timeframe presented several technical and logical challenges.`,
+      type: "list",
+      lists: [
+        {
+          id: "SAA-ch-1",
+          title: "Handling time zone differences accurately for international clients.",
+        },
+        {
+          id: "SAA-ch-2",
+          title: "Designing a backend capable of securely managing meeting data and access.",
+        },
+        {
+          id: "SAA-ch-3",
+          title: "Ensuring reliable performance during concurrent meeting scheduling.",
+        },
+      ],
+    },
+    {
+      id: "SAA-case-7",
+      name: "Responsive Design",
+      content: `The application was designed to be fully responsive, allowing office staff to manage meetings from desktops, tablets, or mobile devices.`,
+      type: "list",
+      lists: [
+        {
+          id: "SAA-resp-1",
+          title: "Responsive dashboard layout for all screen sizes.",
+        },
+        {
+          id: "SAA-resp-2",
+          title: "Mobile-friendly meeting creation and access.",
+        },
+      ],
+    },
+    {
+      id: "SAA-case-8",
+      name: "SEO & Performance Optimization",
+      content: `Although primarily an internal tool, performance optimizations were applied to ensure fast load times and smooth interactions.`,
+      type: "list",
+      lists: [
+        {
+          id: "SAA-opt-1",
+          title: "Optimized API calls to reduce unnecessary data fetching.",
+        },
+        {
+          id: "SAA-opt-2",
+          title: "Efficient component rendering in the frontend.",
+        },
+      ],
+    },
+    {
+      id: "SAA-case-9",
+      name: "Results & Outcomes",
+      content: `The platform significantly improved the office team's ability to manage meetings with international clients.`,
+      type: "list",
+      lists: [
+        {
+          id: "SAA-res-1",
+          title: "Reduced scheduling errors caused by time zone confusion.",
+        },
+        {
+          id: "SAA-res-2",
+          title: "Centralized meeting management in a single internal platform.",
+        },
+        {
+          id: "SAA-res-3",
+          title: "Improved overall efficiency and communication with clients.",
+        },
+      ],
+    },
+    {
+      id: "SAA-case-10",
+      name: "Reflection",
+      content: `This project strengthened my full-stack development skills and highlighted the importance of building practical solutions for real business problems.`,
+      type: "list",
+      lists: [
+        {
+          id: "SAA-ref-1",
+          title: "Gained experience designing and maintaining full-stack applications independently.",
+        },
+        {
+          id: "SAA-ref-2",
+          title: "Improved understanding of real-world constraints such as deadlines and usability.",
+        },
+      ],
+      description: `Future enhancements could include calendar integrations, automated reminders, and analytics for meeting insights.`,
+    },
+  ],
+},
   {
     id: "SGc2xIM9TVU2TIaVYUHt7IlhrpI2oyFngBeai2ujJSY=",
     title: "ShopBD",
@@ -1090,4 +1299,5 @@ export const ProjectsData = [
       },
     ],
   },
+
 ];
